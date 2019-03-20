@@ -14,11 +14,11 @@ header h1 {
     color: #2c3e50;
 }
 
-header h1 {
+header h1 span {
     font-weight: 700;
 }
 
-header h2 span {
+header h2 {
     color: #bdc3c7;
     font-weight: 300;
 }
@@ -60,13 +60,17 @@ header h2 span {
     cursor: pointer;
 }
 
-task:hover span {
+.task:hover span {
     opacity: 1;
 }
 
 .done {
     text-decoration: line-through;
     color: #bdc3c7;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 0 20px;
 }
 
 li span {
