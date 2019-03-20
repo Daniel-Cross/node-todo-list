@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 
 app.use('/api/todos', todoRoutes);
 
-mongoose.connect(process.env.CONN, () => {
+mongoose.connect(process.env.DATABASE_CONN, () => {
 	console.log('connected to the database');
 	app.listen(8080, () => {
 		console.log('server listening on port 8080');
