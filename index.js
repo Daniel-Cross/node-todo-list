@@ -18,6 +18,6 @@ app.use('/api/todos', todoRoutes);
 
 mongoose.connect(process.env.DATABASE_CONN, { useNewUrlParser: true });
 
-app.listen(8080, () => {
-	console.log('Surreal Estate API is running on http://localhost:8080');
+app.listen(process.env.PORT || 8080, () => {
+	console.log('Node Todo List api is running on http://localhost:8080');
 });
