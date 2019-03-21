@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="app.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,10 @@
     </header>
 
     <section class="form">
-        <input type="text" id="todoInput" placeholder="Insert your task here...">
+        <form action="#">
+            <input type="text" id="todoInput" placeholder="Insert your task here..." onkeypress="handle(event)">
+        </form>
+
     </section>
 
     <ul class="list" id="tasks">
@@ -25,6 +29,5 @@
 
 </body>
 <script src="app.js"></script>
-
 
 </html>
